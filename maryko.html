@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Мәриәм - 1 жас</title>
+
+  <!-- Подключение библиотеки AOS для анимации -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: none;
+      background-image: url('https://i.pinimg.com/236x/dc/38/9e/dc389e47ac6a186954e7f72ec4187734.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .invitation {
+      width: 90%;
+      max-width: 800px;
+      background: none;
+      border-radius: 20px;
+      padding: 25px 20px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+      color: black;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
+    }
+
+    .invitation h1 {
+      font-family: 'Great Vibes', cursive;
+      font-size: 2.8em;
+      color: #d85c9f;
+      margin-bottom: 10px;
+    }
+
+    .invitation h2 {
+      font-family: 'Great Vibes', cursive;
+      color: #d85c9f;
+      font-size: 1.8em;
+      margin: 10px 0;
+    }
+
+    .highlight {
+      font-weight: bold;
+      color: #d85c9f;
+    }
+
+    .date-circle {
+      background-color: #d85c9f;
+      color: white;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      line-height: 60px;
+      margin: 10px auto;
+      font-size: 1.5em;
+    }
+
+    .big-number {
+      font-size: 150px;
+      color: #fbb7d0;
+      margin-top: 0;
+      font-weight: 100;
+    }
+
+    .info-block {
+      margin-top: 20px;
+      font-size: 1.1em;
+    }
+
+    .footer {
+      font-size: 0.9em;
+      margin-top: 30px;
+      color: #555;
+    }
+
+    .whatsapp-btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 25px;
+      background-color: #25D366;
+      color: white;
+      border-radius: 30px;
+      text-decoration: none;
+      font-size: 1em;
+      transition: background-color 0.3s;
+    }
+
+    .whatsapp-btn:hover {
+      background-color: #1ebe57;
+    }
+
+    .cloud, .star, .bear {
+      position: absolute;
+      opacity: 0.2;
+      z-index: 0;
+    }
+
+    .cloud {
+      top: 10px;
+      left: -30px;
+      width: 100px;
+      animation: float 6s ease-in-out infinite;
+    }
+
+    .star {
+      bottom: 30px;
+      right: -20px;
+      width: 80px;
+      animation: spin 12s linear infinite;
+    }
+
+    .bear {
+      bottom: 10px;
+      left: 20px;
+      width: 100px;
+      opacity: 1;
+      z-index: 1;
+    }
+
+    .date-info {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 10px;
+    }
+
+    .date-info img {
+      width: 80px; /* Увеличен размер фото */
+      margin-top: 10px; /* Отступ сверху */
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+
+    @keyframes spin {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+
+    @media (max-width: 400px) {
+      .invitation h1 {
+        font-size: 2.2em;
+      }
+
+      .big-number {
+        font-size: 100px;
+      }
+
+      .date-circle {
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <audio autoplay loop>
+    <source src="https://www.bensound.com/bensound-music/bensound-sunny.mp3" type="audio/mp3">
+    Сіздің браузер музыка ойнатуды қолдамайды.
+  </audio>
+
+  <div class="invitation" data-aos="fade-up">
+    <img src="3a2267b46f9035bb627c2a4eca580431-removebg-preview.png" class="bear" alt="bear" data-aos="zoom-in">
+
+    <h1 data-aos="fade-down">Мәриәм</h1>
+    <h2 data-aos="fade-down">1 жас тұсаукесер</h2>
+
+    <p class="highlight" data-aos="fade-up">Құрметті қонақтар!</p>
+    <p data-aos="fade-up">Сіздерді қызымыз <span class="highlight">Мәриәмнің</span> 1 жас тұсаукесер тойына арналған ақ дастарханымыздың қадірлі қонағы болуға шақырамыз!</p>
+
+    <div class="info-block" data-aos="fade-right">
+      <p><strong>Күні:</strong> мамыр</p>
+
+      <div class="date-info" data-aos="fade-left">
+        <div class="date-circle">10</div>
+      </div>
+
+      <p><strong>Уақыты:</strong> сағат 18:00</p>
+    </div>
+
+    <div class="info-block" data-aos="fade-right">
+      <p><strong>Мекенжай:</strong><br>Астана қаласы,<br>Ырғыз көшесі, 27<br>“<strong>Алатау</strong>” мейрамханасы</p>
+    </div>
+
+    <div class="info-block" data-aos="fade-left">
+      <p><strong>Той иелері:</strong><br>Ерболат – Аружан</p>
+    </div>
+
+    <a class="whatsapp-btn" href="https://wa.me/77001234567" target="_blank" data-aos="fade-up">
+      WhatsApp арқылы жазу
+    </a>
+
+    <div class="big-number" data-aos="flip-up">1</div>
+
+    <div class="footer" data-aos="fade-up">Сізді асыға күтеміз! 💖</div>
+  </div>
+
+  <!-- Подключение библиотеки AOS для анимации -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    // Инициализация библиотеки AOS
+    AOS.init();
+  </script>
+</body>
+</html>
